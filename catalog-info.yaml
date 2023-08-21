@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fun-raiser-component
+  description: This component is as a template site that managers will use to create temporary sites for fundraising events.
+  annotations:
+    # This annotation is used to link the component to the template
+    # that should be used to render it.
+    backstage.io/template: my-component-template
+    backstage.io/techdocs-ref: value
+  links:
+    - url: https://fun-raisers.github.io/fun-raiser/
+      title: Demo Site
+      icon: dashboard
+spec:
+  type: website
+  lifecycle: poc
+  owner: bandokal
+  repository: https://github.com/fun-raisers/fun-raiser
